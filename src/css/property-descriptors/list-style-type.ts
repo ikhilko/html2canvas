@@ -82,6 +82,7 @@ export const listStyleType: IPropertyIdentValueDescriptor<LIST_STYLE_TYPE> = {
                 return LIST_STYLE_TYPE.UPPER_ROMAN;
             case 'lower-greek':
                 return LIST_STYLE_TYPE.LOWER_GREEK;
+            case 'lower-latin':
             case 'lower-alpha':
                 return LIST_STYLE_TYPE.LOWER_ALPHA;
             case 'upper-alpha':

@@ -39,6 +39,13 @@ export class ElementContainer {
 
         this.bounds = parseBounds(this.context, element);
 
+        if (
+            element.tagName == 'TD' &&
+            ((element as HTMLTableCellElement).rowSpan > 1 || (element as HTMLTableCellElement).colSpan > 1)
+        ) {
+            this.flags |= 2;
+        }
+
         if (isDebugging(element, DebuggerType.RENDER)) {
             this.flags |= FLAGS.DEBUG_RENDER;
         }

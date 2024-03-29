@@ -119,9 +119,6 @@ module.exports = function(config) {
         Chrome_Stable: {
             base: 'ChromeHeadless'
         },
-        Firefox_Stable: {
-            base: 'Firefox'
-        }
     };
 
     const ciLauncher = launchers[process.env.TARGET_BROWSER];
@@ -130,9 +127,6 @@ module.exports = function(config) {
         stable_chrome: {
             base: 'ChromeHeadless'
         },
-        stable_firefox: {
-            base: 'Firefox'
-        }
     };
 
     const injectTypedArrayPolyfills = function(files) {
